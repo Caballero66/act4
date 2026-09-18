@@ -1,0 +1,121 @@
+:root {
+    --colorAcentoPrincipal: #e50914; 
+    --colorResplandor: #ff1e27; 
+    --fondoBaseOscuro: #080808; 
+    --fondoSuperficies: #121212; 
+    --textoPrincipal: #ffffff; 
+    --textoSecundario: #b3b3b3; 
+}
+
+body.fondoPelicula {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--fondoBaseOscuro);
+    color: var(--textoPrincipal);
+}
+
+.barraNavegacionPelicula {
+    background: linear-gradient(180deg, rgba(0,0,0,0.9) 0%, transparent 100%);
+    backdrop-filter: blur(5px);
+}
+
+.textoMarcaPelicula {
+    color: var(--colorAcentoPrincipal);
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    text-shadow: 0 0 10px rgba(0,0,0,0.8);
+}
+
+.nav-link {
+    color: var(--textoPrincipal);
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--colorAcentoPrincipal);
+}
+
+.portadaPelicula {
+    height: 80vh;
+    background-size: cover;
+    background-position: center top;
+}
+
+.textoTitulo {
+    color: var(--textoPrincipal);
+    text-shadow: 0 4px 15px rgba(0,0,0,0.9);
+}
+
+.textoSubtitulo {
+    color: var(--textoSecundario);
+    text-shadow: 0 2px 8px rgba(0,0,0,0.9);
+}
+
+.botonAccionPrincipal {
+    background-color: var(--colorAcentoPrincipal);
+    color: var(--textoPrincipal);
+    border: none;
+    padding: 12px 30px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.botonAccionPrincipal:hover {
+    background-color: var(--colorResplandor);
+    transform: scale(1.05);
+    box-shadow: 0 0 15px var(--colorAcentoPrincipal);
+    color: var(--textoPrincipal);
+}
+
+.textoSeccion {
+    color: var(--colorAcentoPrincipal);
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.textoDescriptivo {
+    color: var(--textoSecundario);
+    line-height: 1.8;
+}
+
+.tarjetaInformacionTecnica {
+    background-color: var(--fondoSuperficies);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.table td {
+    background-color: transparent;
+    color: var(--textoSecundario);
+}
+
+.table th {
+    background-color: transparent;
+}
+
+.contenedorVideo {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.tarjetaActor img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-color: var(--colorAcentoPrincipal) !important;
+}
+
+.imagenGaleria {
+    transition: transform 0.4s ease, filter 0.4s ease;
+    filter: grayscale(40%);
+    cursor: pointer;
+}
+
+.contenedorModalOscuro {
+    background-color: var(--fondoSuperficies);
+    border: 1px solid var(--colorAcentoPrincipal);
+    box-shadow: 0 0 30px rgba(0,0,0,0.9);
+}
