@@ -9,6 +9,11 @@
     --textoGrisSecundario: #b3b3b3;
 }
 
+@font-face{
+    font-family: 'help';
+    src: url('fonts/help_me.ttf');
+}
+
 body.fondoPrincipalOscuro {
     font-family: 'Montserrat', sans-serif;
     background-color: var(--fondoNegroProfundo);
