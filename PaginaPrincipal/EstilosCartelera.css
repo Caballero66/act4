@@ -79,6 +79,7 @@ body.fondoPrincipalOscuro {
 }
 
 .textoTituloPelicula {
+    font_family: 'help';
     color: var(--textoBlancoPuro);
     font-size: 1.2rem;
     transition: color 0.3s ease;
