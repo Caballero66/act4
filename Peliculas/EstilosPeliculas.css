@@ -9,7 +9,7 @@
 
 @font-face{
     font-family: 'shadow';
-    src: url('fonts/shadow_of_the_dead.tff');
+    src: url('fonts/shadow_of_the_dead.ttf');
 }
 
 body.fondoPelicula {
@@ -48,6 +48,7 @@ body.fondoPelicula {
 
 .textoTitulo {
     font-family: 'shadow';
+    font-size: 50px;
     color: var(--textoPrincipal);
     text-shadow: 0 4px 15px rgba(0,0,0,0.9);
 }
