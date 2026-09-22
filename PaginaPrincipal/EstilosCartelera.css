@@ -11,7 +11,7 @@
 
 @font-face{
     font-family: 'help';
-    src: url('../fonts/help_me.ttf');
+    src: url('fonts/help_me.ttf');
 }
 
 body.fondoPrincipalOscuro {
