@@ -70,7 +70,7 @@ body.fondoPrincipalOscuro {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to top, var(--fondoTarjetas) 0%, rgba(74, 0, 11, 0.2) 50%, transparent 100%);
+    background: linear-gradient(to top, var(--fondoTarjetas) 0%, rgba(74, 0, 11, 0.2) 40%, transparent 100%);
 }
 
 .cuerpoTarjetaPelicula {

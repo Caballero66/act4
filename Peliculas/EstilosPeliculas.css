@@ -5,6 +5,10 @@
     --fondoSuperficies: #121212; 
     --textoPrincipal: #ffffff; 
     --textoSecundario: #b3b3b3; 
+    --fondoNegroProfundo: #080808;
+    --rojoSangreOscuro: #4a000b;
+
+
 }
 
 @font-face{
@@ -133,4 +137,9 @@ body.fondoPelicula {
     background-color: var(--fondoSuperficies);
     border: 1px solid var(--colorAcentoPrincipal);
     box-shadow: 0 0 30px rgba(0,0,0,0.9);
+}
+
+.pieDePaginaDegradado {
+    background: linear-gradient(0deg, var(--rojoSangreOscuro) -100%, var(--fondoNegroProfundo) 100%);
+    border-top: 1px solid rgba(229, 9, 20, 0.2);
 }
