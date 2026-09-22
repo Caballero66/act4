@@ -1,0 +1,501 @@
+:root {
+
+    --rojoNetflix: #e50914;
+
+    --carmesiBrillante: #ff1e27;
+
+    --rojoVinoOscuro: #800020;
+
+    --rojoSangreOscuro: #4a000b;
+
+    --fondoNegroProfundo: #080808;
+
+    --fondoTarjetas: #121212;
+
+    --textoBlancoPuro: #ffffff;
+
+    --textoGrisSecundario: #b3b3b3;
+
+}
+
+
+/* FUENTE PERSONALIZADA */
+
+@font-face {
+
+    font-family: 'help';
+
+    src: url('fonts/help_me.ttf');
+
+}
+
+
+/* CUERPO */
+
+body.fondoPrincipalOscuro {
+
+    font-family: 'Montserrat', sans-serif;
+
+    background-color: var(--fondoNegroProfundo);
+
+    color: var(--textoBlancoPuro);
+
+}
+
+
+/* NAVBAR */
+
+.barraNavegacionDegradada {
+
+    background: linear-gradient(
+        180deg,
+        rgba(0,0,0,0.95) 0%,
+        rgba(8,8,8,0.8) 100%
+    );
+
+    backdrop-filter: blur(8px);
+
+    border-bottom: 1px solid rgba(229, 9, 20, 0.3);
+
+}
+
+
+.textoMarcaNavegacion {
+
+    color: var(--rojoNetflix);
+
+    font-size: 1.8rem;
+
+    letter-spacing: 1px;
+
+    text-shadow: 0 0 10px rgba(229, 9, 20, 0.5);
+
+}
+
+
+.nav-link {
+
+    color: var(--textoGrisSecundario) !important;
+
+    transition: 0.3s;
+
+}
+
+
+.nav-link:hover {
+
+    color: var(--carmesiBrillante) !important;
+
+}
+
+
+/* ENCABEZADO */
+
+.encabezadoPagina {
+
+    padding: 55px 20px 45px;
+
+}
+
+
+.textoPequeno {
+
+    color: var(--textoGrisSecundario);
+
+    letter-spacing: 5px;
+
+    font-size: 0.9rem;
+
+}
+
+
+.tituloPrincipal {
+
+    font-family: 'help';
+
+    font-size: 4.5rem;
+
+    line-height: 1;
+
+    margin: 15px 0;
+
+    text-shadow: 0 0 20px rgba(229,9,20,0.2);
+
+}
+
+
+.tituloPrincipal span {
+
+    color: var(--carmesiBrillante);
+
+}
+
+
+.descripcionPrincipal {
+
+    max-width: 650px;
+
+    margin: auto;
+
+    color: var(--textoGrisSecundario);
+
+    font-size: 1.1rem;
+
+}
+
+
+
+/* TARJETAS */
+
+.tarjetaPeliculaInteractiva {
+
+    background-color: var(--fondoTarjetas);
+
+    border-radius: 8px;
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    transition: all 0.35s cubic-bezier(
+        0.25,
+        1,
+        0.5,
+        1
+    );
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.9);
+
+    overflow: hidden;
+
+}
+
+
+.tarjetaPeliculaInteractiva:hover {
+
+    transform: scale(1.03);
+
+    border-color: var(--carmesiBrillante);
+
+    box-shadow:
+        0 0 25px rgba(229,9,20,0.4),
+        0 10px 30px rgba(0,0,0,0.9);
+
+}
+
+
+/* IMAGEN */
+
+.contenedorImagenTarjeta {
+
+    position: relative;
+
+    width: 100%;
+
+    aspect-ratio: 2 / 1.1;
+
+    overflow: hidden;
+
+    background-color: #000000;
+
+}
+
+
+.imagenPortadaPelicula {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    transition: transform 0.5s ease;
+
+}
+
+
+.tarjetaPeliculaInteractiva:hover
+.imagenPortadaPelicula {
+
+    transform: scale(1.05);
+
+}
+
+
+/* DEGRADADO */
+
+.capaSuperpuestaDegradada {
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    background:
+        linear-gradient(
+            to top,
+            var(--fondoTarjetas) 0%,
+            rgba(74,0,11,0.2) 50%,
+            transparent 100%
+        );
+
+}
+
+
+/* CUERPO */
+
+.cuerpoTarjetaPelicula {
+
+    background:
+        linear-gradient(
+            180deg,
+            var(--fondoTarjetas) 0%,
+            var(--rojoSangreOscuro) 250%
+        );
+
+    padding: 1.5rem;
+
+}
+
+
+.textoTituloPelicula {
+
+    font-family: 'help';
+
+    color: var(--textoBlancoPuro);
+
+    font-size: 2.3rem;
+
+    margin-bottom: 5px;
+
+    transition: color 0.3s ease;
+
+}
+
+
+.tarjetaPeliculaInteractiva:hover
+.textoTituloPelicula {
+
+    color: var(--carmesiBrillante);
+
+}
+
+
+/* SUBTITULO */
+
+.subtituloPelicula {
+
+    color: var(--textoGrisSecundario);
+
+    letter-spacing: 2px;
+
+    margin-bottom: 10px;
+
+}
+
+
+/* AÑO */
+
+.anioPelicula {
+
+    color: var(--textoGrisSecundario);
+
+    font-size: 0.9rem;
+
+    margin-bottom: 15px;
+
+}
+
+
+/* DISPONIBILIDAD */
+
+.textoDisponible {
+
+    color: var(--textoBlancoPuro);
+
+    margin-bottom: 8px;
+
+}
+
+
+/* PLATAFORMAS */
+
+.plataforma {
+
+    display: inline-block;
+
+    padding: 8px 14px;
+
+    border-radius: 5px;
+
+    font-weight: 800;
+
+    font-size: 0.8rem;
+
+    margin-right: 5px;
+
+    margin-bottom: 10px;
+
+}
+
+
+.netflix {
+
+    background-color: var(--rojoNetflix);
+
+    color: white;
+
+}
+
+
+.prime {
+
+    background-color: #168eea;
+
+    color: white;
+
+}
+
+
+.cines {
+
+    background-color: var(--rojoVinoOscuro);
+
+    border: 1px solid var(--carmesiBrillante);
+
+    color: white;
+
+}
+
+
+.otras {
+
+    background-color: #222;
+
+    border: 1px solid #00a9d8;
+
+    color: white;
+
+}
+
+
+/* TEXTO SECUNDARIO */
+
+.textoSecundario {
+
+    color: var(--textoGrisSecundario);
+
+    font-size: 0.85rem;
+
+    min-height: 40px;
+
+}
+
+
+/* BOTON */
+
+.botonVer {
+
+    color: white;
+
+    border: 1px solid var(--carmesiBrillante);
+
+    padding: 9px 20px;
+
+    margin-top: 5px;
+
+    transition: 0.3s;
+
+}
+
+
+.botonVer:hover {
+
+    background-color: var(--rojoNetflix);
+
+    border-color: var(--rojoNetflix);
+
+    color: white;
+
+    box-shadow: 0 0 15px rgba(229,9,20,0.4);
+
+}
+
+
+/* FOOTER */
+
+.pieDePaginaDegradado {
+
+    background:
+        linear-gradient(
+            0deg,
+            var(--rojoSangreOscuro) -100%,
+            var(--fondoNegroProfundo) 100%
+        );
+
+    border-top: 1px solid rgba(229,9,20,0.2);
+
+}
+
+
+.tituloFooter {
+
+    font-family: 'help';
+
+    color: var(--rojoNetflix);
+
+    font-size: 2rem;
+
+}
+
+
+.textoFooter {
+
+    color: var(--textoGrisSecundario);
+
+    font-style: italic;
+
+}
+
+
+.pieDePaginaDegradado hr {
+
+    border-color: rgba(229,9,20,0.3);
+
+    max-width: 500px;
+
+    margin: 20px auto;
+
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    .tituloPrincipal {
+
+        font-size: 3rem;
+
+    }
+
+
+    .textoTituloPelicula {
+
+        font-size: 1.8rem;
+
+    }
+
+
+    .contenedorImagenTarjeta {
+
+        aspect-ratio: 2 / 1.2;
+
+    }
+
+}

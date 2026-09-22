@@ -115,11 +115,18 @@ body.fondoPelicula {
     border-color: var(--colorAcentoPrincipal) !important;
 }
 
+
 .imagenGaleria {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
     transition: transform 0.4s ease, filter 0.4s ease;
     filter: grayscale(40%);
-    max-width: 300px; 
-    max-height: 350px;
+}
+
+.imagenGaleria:hover {
+    transform: scale(1.1);
+    filter: grayscale(0%);
 }
 
 .contenedorModalOscuro {
